@@ -3,12 +3,15 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
   width: 100vw;
-  height: 5rem;
+  height: calc(4rem + 1vw);
   display: flex;
   justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
+  z-index:900;
+  background-color: #ffbf00f8;
+  margin-bottom: 1rem;
 `;
 
 export const NavbarWrapper = styled.div`
@@ -75,9 +78,6 @@ export const Link = styled(NavLink)`
     background: #dcdcdc;
   }
 
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
 `;
 
 export const Hamburger = styled.button`

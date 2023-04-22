@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
@@ -11,7 +12,7 @@ export const LeftContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  gap: calc(2rem + .5vw);
+  gap: calc(2rem + 0.5vw);
   padding-left: 6vw;
   padding-right: 2rem;
 `;
@@ -24,7 +25,9 @@ export const Description = styled.p`
   font-size: calc(0.9rem + 0.2vw);
 `;
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+  text-decoration: none;
+  color: black;
   width: 10rem;
   padding: 0.8rem 2rem;
   background: #ffcd00;
@@ -64,7 +67,7 @@ export const Button = styled.button`
     position: unset;
 
     &::after {
-        display: none;
+      display: none;
     }
   }
 `;

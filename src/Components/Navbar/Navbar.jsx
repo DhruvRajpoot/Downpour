@@ -28,7 +28,6 @@ const Navbar = () => {
         </LogoContainer>
         <LinksContainer isOpen={isOpen}>
           <Link to="/" onClick={setIsOpenFunc}>Home</Link>
-          <Link to="/about" onClick={setIsOpenFunc}>About</Link>
           <Link to="/booking" onClick={setIsOpenFunc}>Booking</Link>
         </LinksContainer>
         <Hamburger onClick={setIsOpenFunc}>{isOpen?<VscClose/>:<BiMenuAltRight/>}</Hamburger>

@@ -25,7 +25,7 @@ const Hero = () => {
           We provide taxi booking services at most affordable prices. <br /> We
           will drop you at your destination safely and on time.
         </Description>
-        <Button>Book Taxi</Button>
+        <Button to='/booking'>Book Taxi</Button>
       </LeftContainer>
       <RightContainer>
         <Image src={taxi2}/>
